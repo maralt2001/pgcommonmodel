@@ -23,6 +23,10 @@ func (u *User) GetRolesCount() int {
 	return len(u.Roles)
 }
 
+func (r *Role) GetUsersCount() int {
+	return len(r.Users)
+}
+
 func (u *User) GetRolesFromUser() []*Role {
 	return u.Roles
 }
