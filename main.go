@@ -22,3 +22,7 @@ type Role struct {
 func (u *User) GetRolesCount() int {
 	return len(u.Roles)
 }
+
+func (u *User) GetRoles() []*Role {
+	return u.Roles
+}
