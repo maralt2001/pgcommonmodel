@@ -23,6 +23,10 @@ func (u *User) GetRolesCount() int {
 	return len(u.Roles)
 }
 
-func (u *User) GetRoles() []*Role {
+func (u *User) GetRolesFromUser() []*Role {
 	return u.Roles
+}
+
+func (r *Role) GetUsersFromRole() []*User {
+	return r.Users
 }
